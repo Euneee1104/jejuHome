@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* 초기화 */
+html, body, div, header, nav, section, aside, article, footer, figure, figcaption,
+legend, ul, ol, li, dl, dt, dd, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+fieldset {
+    border: 0;
+}
+/* 숨김 콘텐츠 */
+.hidden, legend, caption {
+    position: absolute;
+    left: -9999px;
+}
+/* 웹 폰트 */
+@font-face { 
+    /* 서버에 폰트를 올리는 것 */
+    font-family: "Nanum";
+    font-weight: 400;
+    src: url("font/NanumGothic.eot?#iefix") format("embedded-opentype"),
+         url("font/NanumGothic.woff") format("woff"),
+         url("font/NanumGothic.ttf") format("truetype");
+}
+@font-face { 
+    /* 서버에 폰트를 올리는 것 */
+    font-family: "NanumBold";
+    font-weight: 600;
+    src: url("font/NanumGothic.eot?#iefix") format("embedded-opentype"),
+         url("font/NanumGothic.woff") format("woff"),
+         url("font/NanumGothic.ttf") format("truetype");
+}
+@font-face { 
+    /* 서버에 폰트를 올리는 것 */
+    font-family: "NanumEX";
+    font-weight: 900;
+    src: url("font/NanumGothic.eot?#iefix") format("embedded-opentype"),
+         url("font/NanumGothic.woff") format("woff"),
+         url("font/NanumGothic.ttf") format("truetype");
+}
+@font-face { 
+    /* 서버에 폰트를 올리는 것 */
+    font-family: "webcafeIcon";
+    font-weight: 400;
+    src: url("font/webcafeIcon.eot?#iefix") format("embedded-opentype"),
+         url("font/webcafeIcon.woff") format("woff"),
+         url("font/webcafeIcon.ttf") format("truetype"),
+         url("font/webcafeIcon.svg#webcaferegular") format("svg");
+}
+
+/* 링크스타일 */
+a:link {
+    color: #4f4f4f;
+    text-decoration: none;
+}
+a:visited {
+    color: #8a8e91;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #f00;
+    text-decoration: none;
+}
+
+/* 기본스타일 */
+body {
+    font-family: "Nanum";
+    color: #000;
+    background-color: #fff;
+    font-size: 0.75em; /*12px*/
+    line-height: 1.2;
+}
+
+/* 건너뛰기 링크 */
+#skipNav {
+    position: absolute;
+    left: -9999px;
+}
+#skipNav:focus {
+    left: 50%;
+    margin: 3px 0 0 -3em;
+    padding: 55px 15px;
+    background-color: #000;
+    flood-color: #fff;
+    outline: 0;
+    z-index: 10;
+}
+
+/* 전체 레이아웃 설계 */
+header, #visual, #contentsArea, #slogan, #footerInner {
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#wrapper {
+    background-color: white;
+    background-image: url(images/bg_flower.png),
+                      linear-gradient(to bottom, #c7c7c7 0%, #fff 70%, #fff 100%);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/* 헤더 영역시작 */
+header {
+    height: 110px;
+    position: relative;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    padding: 0 30px;
+}
+.logo {
+    position: absolute;
+    top: 37px;
+    left: 60px;
+}
+.infoLink {
+    text-align: right;
+}
+.infoLink > li {
+    display: inline-block;
+    padding: 8px 0 7px 3px;
+}
+.infoLink a::before {
+    content: ":";
+    padding-right: 8px;
+}
+.infoLink > li:first-child a::before {
+    content: "";
+}
+.mainMenu {
+    background-image: linear-gradient(to bottom, #ffc848 0%, #ff8208 40%, #ffc848 100%);
+    padding-left: 225px;
+    height: 45px;
+    border-top: 2px solid black;
+    border-radius: 0 0 5px 5px;
+}
+.mainMenu > li {
+    position: relative;
+}
+.mainMenu li, .mainMenu a {
+    display: inline-block;
+}
+.mainMenu > li > a {
+    font-family: "NanumEX";
+    font-size: 1.2em;
+    padding: 15px 20px 14px;
+    color: white;
+    letter-spacing: 1px;
+    border-left: 1px solid white;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5),
+                 0 1px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5) ;
+}
+.mainMenu > li > a:hover, .mainMenu > li > a:focus {
+    color: yellow;
+}
+.mainMenu > li > a:hover::after, .mainMenu > li > a:focus::after {
+    content: "";
+    display: block;
+    background: black;
+    height: 2px;
+    width: 100%;
+    position: relative;
+    top: 12px;
+}
+.mainMenu > li:hover ul {
+    display: block;
+}
+.mainMenu ul {
+    position: absolute;
+    z-index: 10;
+    white-space: nowrap;
+}
+.mainMenu ul a {
+    padding: 8px 0 7px 15px;
+}
+.mainMenu ul a::before {
+    content: "r";
+    font-family: "webcafeIcon";
+    color: #666;
+    position: relative;
+    top: 3px;
+}
+.mainMenu ul a:hover::before, .mainMenu ul a:focus::before {
+    content: "c";
+    color: red;
+}
+.aboutHTML{
+    display: none;
+} 
+.aboutCSS {
+    display: none;
+} 
+.webAccessibility {
+    display: none;
+}
+.webStandard {
+    display: none;
+    left: -100px;
+} 
+.qna {
+    display: none;
+    left: -150px;
+} 
+.archive {
+    display: none;    
+    right: 0;
+}
+/* 헤더 영역종료 */
+
+/* 비주얼 영역 시작 */
+#visual {
+    height: 120px;
+    position: relative;
+}
+#visual p {
+    position: absolute;
+    font-family: Georgia, serif;
+    font-size: 2em;
+    font-weight: bold;
+    top: 75px;
+    left: 400px;
+    animation: textAni 1s;
+}
+#visual::before, #visual::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    animation: flowerAni 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#visual::before {
+    background-image: url(images/ani_flower_01.png),
+                      url(images/ani_flower_02.png);
+    background-repeat: no-repeat;
+    background-position: 0 5px, 670px 0;
+}
+#visual::after {
+    background-image: url(images/ani_flower_03.png),
+                      url(images/ani_flower_04.png);
+    background-repeat: no-repeat;
+    background-position: 300px 35px, 800px 65px;
+}
+@keyframes textAni {
+    0% {
+        font-size: 1em;
+        top: 0;
+        left: 0;
+        opacity: 0.2;
+    }
+    100% {
+        font-size: 2em;
+        top: 75px;
+        left: 400px;
+        opacity: 1;
+    }
+}
+@keyframes flowerAni {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* 비주얼 영역 종료 */
+
+/* 메인 콘텐츠 영역 시작 */
+#contentsArea {
+    min-height: 400px;
+    padding: 30px 0 30px 30px;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+/* 메인 콘텐츠 영역 종료 */
+
+/* 슬로건 영역 시작 */
+#slogan {
+    padding: 15px 0;
+    position: relative;
+}
+#slogan > h2 {
+    width: 110px;
+    height: 90px;
+    background: url(images/coffee.png) no-repeat;
+    background-size: 110px 90px;
+    text-indent: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    bottom: -25px;
+    left: 30px;
+}
+#slogan > p {
+    margin: 0 100px 0 200px;
+    color: #a09784;
+    font-size: 1.1em;
+}
+#slogan q {
+    font-weight: bold;
+}
+#slogan q::before {
+    font-size: 3em;
+    color: #765725;
+    position: relative;
+    top: 15px;
+    left: -5px;
+}
+/* 슬로건 영역 종료 */
+/* 푸터 영역 시작 */
+#footer {
+    padding: 15px 0;
+    background-image: linear-gradient(to bottom, #c7c7c7 0%, #fff 70%, #fff 100%);
+}
+#footerInner {
+    position: relative;
+}
+.footerLogo {
+    position: absolute;
+    left: 35px;
+    top: 45px;
+}
+.guide, address, .copyright {
+    margin-left: 200px;
+    margin-right: 100px;
+}
+.guide {
+    background: #7b8385;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.guide li {
+    display: inline-block;
+}
+.guide a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px 10px 0;
+}
+.guide a::before {
+    content: "|";
+    padding-right: 20px;
+}
+.guide li:first-child a::before {
+    content: "";
+}
+address {
+    font-style: normal;
+    margin-bottom: 5px;
+}
+address > span {
+    margin-right: 10px;
+}
+.techLogoArea {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* 푸터 영역 종료 */

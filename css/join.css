@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* 비주얼 영역시작 */
+#visual {
+    position: relative;
+    top: 0;
+    /* margin-bottom: 50px; */
+}
+#visual img {
+    opacity: 0.8;
+}
+#visual h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'MICEGothic';
+    font-size: 1.5em;
+}
+
+
+/* 회원가입 영역 */
+#contentsArea {
+    width: 500px;
+    height: auto;
+    min-height: 600px;
+    margin: auto;
+    padding: 0 20%;
+
+}
+form {
+    width: 100%;
+    height: auto;
+}
+
+
+/* --------------------------------------- */
+.inser_data {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    margin-bottom: 14px;
+}
+.inser_data input, .input_form input {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    /* text-align: center; */
+    padding: 12px;
+    box-sizing: border-box;
+}
+.inser_data input[type = "text"] {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pw_box {
+    position: relative;
+}
+#password, #confirmPassword {
+    padding-right: 7rem;
+    box-sizing: border-box;
+}
+.fa-lock {
+    display: block;
+    position: absolute;
+    top: 37px;
+    right: 1rem;
+    /* transform: translate(-50%); */
+}
+.input_form {
+    margin-bottom: 16px;
+}
+.input_form label {
+    font-weight: 700;
+}
+.input_form input {
+    margin-top: 3px;
+}
+.email input {width: 160px;}
+.email select {
+    width: 150px; 
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+.email option {font-size: 1.2em;}
+
+.btnJoinArea { 
+    text-align: center;
+    /* border: none; */
+}
+.btnOk {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btnCancel {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+/* --------------------------------------- */
+
+.error_next_box {
+    display: none;
+} 
+ .error_next_box span {
+    display: none;
+}
+.result.success {
+    display: block;
+    padding: 5px 0 5px 0;
+}
+.result.success > span:nth-of-type(2) {
+    display: inline; 
+    color: red;
+}
+.result.error {
+    display: block;
+    padding: 5px 0 5px 0;
+}
+.result.error > span:nth-of-type(1){
+    display: inline;
+    color: red;
+}
+/* .input_block input, .input_form input{
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    position: relative;
+    padding: 12px 16px;
+    width: 70%;
+    text-align: center;
+}
+.input_form input {
+    margin-top: .3125rem;
+    margin-bottom: .9375rem;
+}
+.input_block #confirmPassword {
+    margin-bottom: .9375rem;
+}
+
+

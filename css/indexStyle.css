@@ -1,0 +1,309 @@
+#mvisual {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 1.125em;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .thumb img {
+    width: 100%;
+} */
+.txt_wrap {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 550px;
+    height: 120px;
+}
+.txt_wrap .inner {
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    padding: 0 10px 0 10px;
+    font-family: 'GangwonEdu_OTFLightA';
+    line-height: 2em;
+}
+.inner strong {
+    font-size: 2.3em;
+}
+.inner .addr_txt {
+    font-size: 1.5em;
+}
+.inner .place {
+    font-size: 1.2em;
+    background-color: rgba(245, 255, 106, 0.2);
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #ccc;
+}
+
+/* 공지사항 */
+.notic{
+    max-width: 40%;
+    height: 150px;
+    background-color: rgb(169, 169, 96);
+    margin-left: 10%;
+    padding: 40px;
+    z-index: 3;
+    position: absolute;
+    top: 80%;
+}
+
+.notic h3, .notic table, .notic table a{
+    color: #fff;
+}
+table {
+    width: 100%;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+.notic td{
+ max-width: 0;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
+td.column_a {
+    width: 30%;
+}
+td.column_b {
+    width: 70%;
+}
+
+
+/* 지역설명--------------------------- */
+.map {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 8%;
+    margin-bottom: 200px;
+}
+
+.map1, .map2 {
+   width: 60%;
+}
+#mapInfo {
+    margin-left: 10%;
+    /* margin-right: 10%; */
+}
+#mapInfo .mapSub h3 {
+    font-family: 'ONE-Mobile-POP';
+    font-weight: 100;
+    color: rgb(14, 131, 78);
+    font-size: 1.5em;
+}
+#mapInfo .mapSub h2 {
+    font-family: 'ONE-Mobile-POP';
+    color: #000;
+    font-size: 3em;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+#mapInfo .mapSub h2 mark {
+    color: rgb(31, 185, 46);
+    background-color: #fff;
+    font-weight: 300;
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    margin: 0;
+}
+#mapsearch td{
+    font-family: 'S-CoreDream-3Light';
+    width: 20%;
+    height: 42px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border: 2px solid #e5e5e5;
+    border-radius: 15px;
+}
+
+
+#mapsearch .selectPlace {
+    background-color: rgb(45, 163, 100);
+    color: #fff;
+    /* border: 2px solid rgb(45, 163, 100); */
+}
+
+#mapsearch td:hover{
+    background-color: rgb(45, 163, 100);
+    color: #fff;
+    /* border: 2px solid rgb(45, 163, 100); */
+ }
+
+ /* 관광지소개---------------------------- */
+.mapContent {
+    position: relative;
+    width: 74%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.mapContent #infoItem {
+    max-width: 93%;
+    min-width: 400px;
+    width: 100%;
+    height: 170px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+
+.title a{
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 2em;
+    font-weight: 100;
+    padding-right: 10px;
+}
+.titleInfo {
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 2em;
+    font-weight: 100;
+    margin: 30px 0 30px 0;
+    font-size: 1em;
+    color: rgb(83, 83, 83);
+}
+.title .fa-arrow-up-right-from-square {
+    color: #808282;
+    font-size: 1.5em;
+}
+
+/* .hide {
+    display: none;
+} */
+.info1 {
+    position: absolute;
+    top: 30px;
+}
+.info2 {
+    position: absolute;
+    top: 30px;
+}
+.info3 {
+    position: absolute;
+    top: 30px;
+}
+.info4 {
+    position: absolute;
+    top: 30px;
+    /* padding-right: 30px; */
+}
+.info5 {
+    position: absolute;
+    top: 30px;
+}
+.info6 {
+    position: absolute;
+    top: 30px;
+}
+
+#infoItem li {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+ /* 지도--------------------- */
+ .mapAll{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* margin-right: 10%; */
+    transform: scale(90%);
+}
+.mapcon ul{
+    position: relative;
+}
+.mapcon img {
+    position: absolute;
+    top: 0;
+    height: auto;
+    opacity: 0;
+}
+
+/* .sungsan img {
+    max-width: 100%;
+    width: 36.5%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: .5%;
+    opacity: 0;
+}
+.namwon img {
+    max-width: 100%;
+    width: 34.5%;
+    height: auto;
+    position: absolute;
+    top: 33%;
+    right: 14.5%;
+    opacity: 0;
+}
+.jungmun img {
+    max-width: 100%;
+    width: 30.5%;
+    height: auto;
+    position: absolute;
+    top: 54%;
+    right: 40%;
+    opacity: 0;
+}
+.hankyug img {
+    max-width: 100%;
+    width: 34.5%;
+    height: auto;
+    position: absolute;
+    top: 50.5%;
+    left: 3.5%;
+    opacity: 0;
+}
+.hanlim img {
+    max-width: 100%;
+    width: 36%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    opacity: 0;
+} */
+
+/* .mapcon img:hover {
+    z-index: 5;
+    opacity: 1;
+} */
+
+.mapcon .selectMap {
+    z-index: 5;
+    opacity: 1;
+}

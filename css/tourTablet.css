@@ -1,0 +1,15 @@
+@media screen and (max-width:1024px) {
+
+    .mainImg .tourist {margin-bottom: 80px;}
+    .selectTour_on .item_section {
+        width: 340px;
+        height: 300px;
+        background-color: #f6f6f6;
+    }
+    .selectTour_on .item_section img {text-align: center;}
+    .item_top .day_tit {font-size: 1.1em; padding-bottom: 5px;}
+    .item_top .day_theme {font-size: 0.8em; letter-spacing: -0.5px; padding-bottom: 5px;}
+    .item_top .day_tag {font-size: 0.7em;}
+    .selectTour_on .tourItem_list li:nth-child(3){margin: 0 40px 40px 0;}
+    .selectTour_on .tourItem_list li:nth-child(4){margin: 0 40px 40px 40px;}
+}

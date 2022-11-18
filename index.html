@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/indexTablet.css">
+    <link rel="stylesheet" href="icons/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main_img.js"></script>
+    <title>제주옵서</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <!-- <script>
+        let smartPhones=[
+            'iphone','ipod','ipad','opera mini','opera mobi','nokia','android',
+            'Webos','windows ce','blackberry','iemobile','sonyericsson'
+        ];
+        //스마트폰 구분
+        for(let i in smartPhones) {
+            if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))) {
+                document.location='http://yoyo.dothome.co.kr/mindex.html';
+            }
+        }
+    </script>  -->
+</head>
+<body>
+    <a href="#contents" class="hide">본문바로가기</a>
+    <!-- 해더영역 -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/jejuLogo.png" alt=""></a>
+        </div>
+        <nav role="navigation" class="navigator">
+            <h2 class="hide">메인메뉴</h2>
+            <ul class="main-menu">
+                <li><a href="#">제주여행</a>
+                    <ul class="travel">
+                        <li><a href="#">음식여행</a></li>
+                        <li><a href="#">힐링여행</a></li>
+                        <li><a href="#">문화여행</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">해수욕장</a>
+                    <ul class="beach">
+                        <li><a href="#">해수욕장 소개</a></li>
+                        <li><a href="#">해변드라이브 코스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">관광안내</a>
+                    <ul class="tour">
+                        <li><a href="#">축제관광</a></li>
+                        <li><a href="tourInfo.html">인기 관광지</a></li>
+                        <li><a href="#">제주 투어패스</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="hide">주요서비스</h2>
+        <nav class="spot">
+            <h3 class="jejusi-go"><a href="https://www.jejusi.go.kr/index.ac" target="_blank">제주시청 바로가기</a></h3>
+            <div>
+                <ul class="spot_log">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="joinlink.html"><b class="bold">로그인</b></a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div class="sub-bg"></div> -->
+    <!-- 메인이미지영역 -->
+    <section id="mvisual">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/tour_tree.jpg" alt="나혼자나무" class="first_img">
+                    <span class="txt_wrap">
+                        <span class="inner">
+                            <strong>제주 새별오름 나혼자나무</strong><br>
+                            <span class="addr_txt">주소 : 제주시 애월읍 본성리 산59-8</span><br>
+                            <span class="place"><b>여기는 </b><em>나혼자나무</em>  #제주 #여행 #사진스팟</span>
+                        </span>
+                    </span>
+                </div>
+              <div class="swiper-slide">
+                <img src="images/maze.jpg" alt="김녕미로공원">
+                <span class="txt_wrap">
+                    <span class="inner">
+                        <strong>김녕미로공원</strong><br>
+                        <span class="addr_txt">주소 :제주시 구좌읍 김녕리 산 16번지(만장굴길 122)</span><br>
+                        <span class="place"><b>여기는 </b><em>김녕미로궁원</em>  #제주 #테마파크 #미로공원</span>
+                    </span>
+                </span>
+              </div>
+            </div>
+            <!-- 슬라이드 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            }
+        });
+        </script>
+
+    <!-- 공지사항영역 -->
+        <div class="notic">
+            <h3>공지사항</h3>
+            <table>
+                <colgroup>
+                    <col width="50%">
+                </colgroup>
+                <thead>
+                    <th>내용</th>
+                    <th col width="10%">날짜</th>
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <td>
+                            <a href="https://www.visitjeju.net/u/8VB" target="_blank">
+                                뷰(View)티풀제주 이벤트! 내가 제일 좋아하는 제주의 여름 여행지는?
+                            </a>
+                        </td>
+                        <td>22.07.15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.visitjeju.net/u/8VE" target="_blank">
+                                제주국제공항 해외입국자를 위한 입국절차 안내
+                            </a>
+                        </td>
+                        <td>22.06.19</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.visitjeju.net/u/8VJ" target="_blank">
+                                바이오 정보 등록하고 똑! 소리나게 공항 이용하기
+                            </a>
+                        </td>
+                        <td>22.05.18</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.visitjeju.net/u/8VL" target="_blank">
+                                도내 관광지 입장 요금(2022. 5. 1.)
+                            </a>
+                        </td>
+                        <td>22.05.01</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+<!-- 지도영역 -->
+    <div class="map">
+        
+        <!-- 제주도 지역설명 -->
+        <div id="mapInfo" class="map1">
+            <div class="mapSub">
+                <h3>지도로 보는</h3>
+                <h2>제주도 인기 <mark>관광지</mark></h2>
+                <table id="mapsearch" class="table">
+                    <tr>
+                        <td data-map="jeju" data-num="1" class="tb">제주/조천</td>
+                        <td data-map="sungsan" data-num="2" class="tb">성산/구좌</td>
+                        <td data-map="namwon" data-num="3" class="tb">남원/표선</td>
+                    </tr>
+                    <tr>
+                        <td data-map="jungmun" data-num="4" class="tb tr">중문/서귀포</td>
+                        <td data-map="hankyug" data-num="5" class="tb tr">한경/대정/인덕</td>
+                        <td data-map="hanlim" data-num="6" class="tb tr">한림/애월</td>  
+                    </tr>
+                </table>
+            </div>
+            <div class="mapContent">
+                <div id="infoItem">
+                    <div class="info1">
+                        <span class="title">
+                            <a href="tourInfo.html#tour1">산굼부리</a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                        <p class="titleInfo">#오름 #걷기/등산 #친구 #자연경관 #억새</p>
+                        <ul>
+                            <li><strong>주소 : </strong>제주특별자치도 제주시 조천읍 비자림로 768</li>
+                            <li><strong> 연락처 : </strong>064-783-9900</li>
+                        </ul>
+                    </div>
+                    <div class="info2 hide">
+                        <span class="title">
+                            <a href="tourInfo.html#tour2">성산일출봉</a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                        <p class="titleInfo">#유네스코 #부모님 #오름 #자연경관 #일출</p>
+                        <ul>
+                            <li><strong>주소 : </strong>제주특별자치도 서귀포시 성산읍 성산리 1</li>
+                            <li><strong> 연락처 : </strong>064-783-0959</li>
+                        </ul>
+                    </div>
+                    <div class="info3 hide">
+                        <span class="title">
+                            <a href="tourInfo.html#tour3">머체왓숲길</a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                        <p class="titleInfo">#힐링 #치유 #자연 #도보</p>
+                        <ul>
+                            <li><strong>주소 : </strong>제주특별자치도 서귀포시 남원읍 서성로 755</li>
+                            <li><strong> 연락처 : </strong>064-805-3113</li>
+                        </ul>
+                    </div>
+                    <div class="info4 hide">
+                        <span class="title">
+                            <a href="tourInfo.html#tour4">천지연폭포</a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                        <p class="titleInfo">#폭포 #여름 #자연경관 #포토존 #유네스코</p>
+                        <ul>
+                            <li><strong>주소 : </strong>제주특별자치도 서귀포시 남성중로 2-15
+                            </li>
+                            <li><strong> 연락처 : </strong>064-733-1528</li>
+                        </ul>
+                    </div>
+                    <div class="info5 hide">
+                        <span class="title">
+                            <a href="tourInfo.html#tour5">산방산</a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                        <p class="titleInfo">#등산 #유네스코 #유채꽃 #포토존 #걷기 #자연</p>
+                        <ul>
+                            <li><strong>주소 : </strong>제주특별자치도 서귀포시 안덕면 사계리 산 16</li>
+                            <li><strong> 연락처 : </strong>064-794-2940</li>
+                        </ul>
+                    </div>
+                    <div class="info6 hide">
+                        <span class="title">
+                            <a href="tourInfo.html#tour6">새별오름</a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                        <p class="titleInfo">#등산 #오름 #포토존 #자연 #억새</p>
+                        <ul>
+                            <li><strong>주소 : </strong>제주특별자치도 제주시 애월읍 봉성리 산 59-8</li>
+                            <li><strong> 연락처 : </strong>064-728-2752</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mapAll map2">
+            <img src="images/제주지도.png" alt="">
+            <ul class="mapcon">
+                <li class="jeju" data-map="jeju" data-num="1">
+                    <img src="images/제주시.png" alt="">
+                </li>
+                <li class="sungsan" data-map="sungsan" data-num="2">
+                    <img src="images/성산읍.png" alt="">
+                </li>
+                <li class="namwon" data-map="namwon" data-num="3">
+                    <img src="images/남원읍.png" alt="">
+                </li>
+                <li class="jungmun" data-map="jungmun" data-num="4">
+                    <img src="images/서귀포시-1.png" alt="">
+                </li>
+                <li class="hankyug" data-map="hankyug" data-num="5">
+                    <img src="images/한경읍-1.png" alt="">
+                </li>
+                <li class="hanlim" data-map="hanlim" data-num="6">
+                    <img src="images/한림읍.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 콘텐츠영역 -->
+    
+
+    <footer>
+        <h2>제주옵서</h2>
+        <a href="https://www.jejusi.go.kr/index.ac" target="_blank"><img src="images/jeju_ci.png" alt=""></a>
+        <p>(63208) 제주특별자치도 제주시 광양9길 10, 대표전화：064-120 <br>
+            10, Gwangyang 9-gil, Jeju-si, Jeju-do, 63208, Republic of Korea <br>
+            Copyright 1999 JEJU-SI. All rights reserved.
+        </p>
+        <ul class="footmenu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+

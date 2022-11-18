@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="icons/fontawesome-free-6.1.1-web/css/all.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/join.js"></script>
+    <title>제주옵서 회원가입</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+</head>
+<body>
+    <a href="#contents" class="hide">본문바로가기</a>
+    <!-- 해더영역 -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/jejuLogo.png" alt=""></a>
+        </div>
+        <nav role="navigation" class="navigator">
+            <h2 class="hide">메인메뉴</h2>
+            <ul class="main-menu">
+                <li><a href="#">제주여행</a>
+                    <ul class="travel">
+                        <li><a href="#">음식여행</a></li>
+                        <li><a href="#">힐링여행</a></li>
+                        <li><a href="#">문화여행</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">해수욕장</a>
+                    <ul class="beach">
+                        <li><a href="#">해수욕장 소개</a></li>
+                        <li><a href="#">해변드라이브 코스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">관광안내</a>
+                    <ul class="tour">
+                        <li><a href="#">축제관광</a></li>
+                        <li><a href="tourInfo.html">인기 관광지</a></li>
+                        <li><a href="#">제주 투어패스</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="hide">주요서비스</h2>
+        <nav class="spot">
+            <h3 class="jejusi-go"><a href="https://www.jejusi.go.kr/index.ac" target="_blank">제주시청 바로가기</a></h3>
+            <div>
+                <ul class="spot_log">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#"><b class="bold">로그인</b></a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <!-- 헤더 영역종료 -->
+
+    <!-- 비주얼 영역시작 -->
+    <div id="visual">
+        <img src="images/Citrus.jpg" alt="">
+        <h2>회원가입</h2>
+    </div>
+    <!-- 비주얼 영역종료 -->
+
+    <!-- 메인 콘텐츠 영역 시작 -->
+    <div id="contentsArea">
+            <h2 class="hide">제주옵서 회원가입</h2>
+
+            <!-- 아이디 비밀번호 입력란 -->
+            <form action="confirmJoin.html" method="post">
+                    <div class="inser_data">
+                        <legend class="id_box">
+                            <h3 class="hide">아이디</h3>
+                            <input type="text" id="id" name="id" minlength="4" maxlength="15" title="생셩할 아이디 입력" required placeholder="아이디">
+                            <div class="error_next_box result">
+                                <span>5~15자의 영문 소문자, 숫자와 특수기호의 사용이 가능합니다.</span>
+                                <span>사용 가능한 아이디입니다.</span>
+                                <span>필수 입력 창입니다.</span>
+                            </div>
+                        </legend>
+                        <legend class="pw_box pw">
+                            <h3 class="hide">비밀번호</h3>
+                            <input type="password" id="password" name="password" required placeholder="비밀번호">
+                            <!-- <span id="chkNotice"></span> -->
+
+                            <!-- <span class="pswdicon">
+                                <i class="fa-solid fa-lock"></i>
+                            </span> -->
+                        <!-- <span class="error_next_box" id="pswd1Msg" style aria-live="assertive">필수 정보입니다.</span> -->
+                    </legend>
+                    <legend class="pw_box confirm_pw" >
+                        <h3 class="hide">비밀번호 확인</h3>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="비밀번호 확인">
+                        <i class="fa-solid fa-lock"></i>
+                        <span id="chkNotice"></span>
+                        <!-- <div class="error_next_box" id="pw_error">
+                            <span>비밀번호가 일치하지 않습니다.</span>
+                        </div> -->
+                    </legend>
+                    
+                    <!-- <span class="error_next_box" id="pswd2Msg" style aria-live="assertive">필수 정보입니다.</span> -->
+                </div>
+            <div class="input_form name">
+                <label for="name">성명</label><br>
+                <input type="text" id="name" name="name" required placeholder="이름을(를) 입력하세요.">
+            </div>
+            <div class="input_form tel">
+                <span>
+                    <!-- <i class="fa-solid fa-circle"></i> -->
+                    <label for="tel">휴대전화</label><br>
+                    <input type="tel" id="phoneNo" name="phoneNo" placeholder="전화번호 입력" aria-label="전화번호 입력" class="int" maxlength="16">
+                    <label fimage.pngr="phoneNo" class="lbl"></label>
+                </span>
+            </div>
+            <div class="input_form email">
+                <!-- <i class="fa-solid fa-circle"></i> -->
+                <label for="email">이메일</label><br>
+                <input type="text" name="str_email01" id="str_email01"> @ 
+                <input type="text" name="str_email02" id="str_email02" disabled value="">
+                <select name="selectEmail" id="selectEmail">
+                    <option value="1">직접입력</option>
+                    <option value="naver.com" selected>naver.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="hotmail.com">hotmail.com</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="yahoo.co.kr">yahoo.co.kr</option>
+                    <option value="empas.com">empas.com</option>
+                    <option value="dreamwiz.com">dreamwiz.com</option>
+                    <option value="freechal.com">freechal.com</option>
+                    <option value="lycos.co.kr">lycos.co.kr</option>
+                    <option value="korea.com">korea.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="hanmir.com">hanmir.com</option>
+                    <option value="paran.com">paran.com</option>
+                </select>
+            </div>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+            <script type="text/javascript">
+            //이메일 입력방식 선택
+            $('#selectEmail').change(function(){
+            $("#selectEmail option:selected").each(function () {
+                    
+                    if($(this).val() == '1'){ //직접입력일 경우
+                        $("#str_email02").css('');                        //값 초기화
+                        $("#str_email02").attr("disabled",true); //활성화
+                    }else{ //직접입력이 아닐경우
+                        $("#str_email02").val($(this).text());      //선택값 입력
+                        $("#str_email02").attr("disabled",false); //비활성화
+                    }
+            });
+            });
+            </script>
+              
+            
+            <div class="btnJoinArea">
+                <button type="submit" class="btnOk" onclick="checkfield()">가입하기</button>
+                <button type="reset" class="btnCancel">취소</button>
+            </div>
+        </form>
+    </div>
+    <!-- 회원가입 영역 종료 -->
+
+    <!-- 푸터영역 -->
+    <footer>
+        <h2>제주옵서</h2>
+        <a href="https://www.jejusi.go.kr/index.ac" target="_blank"><img src="images/jeju_ci.png" alt=""></a>
+        <p>(63208) 제주특별자치도 제주시 광양9길 10, 대표전화：064-120 <br>
+            10, Gwangyang 9-gil, Jeju-si, Jeju-do, 63208, Republic of Korea <br>
+            Copyright 1999 JEJU-SI. All rights reserved.
+        </p>
+        <ul class="footmenu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

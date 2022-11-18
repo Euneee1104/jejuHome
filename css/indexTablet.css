@@ -1,0 +1,117 @@
+@media screen and (max-width:1024px) {
+    header {
+        height: 120px;
+    }
+    .logo {
+        top: 90px;
+        font-size: 1.3rem;
+    }
+    .main-menu > li {top: 30px;}
+    .main-menu > li > a{
+        margin: 0;
+        margin-left: 15px;
+        font-size: 1em;
+    }
+    .main-menu > li > a:last-child {
+        margin-left: 0;
+    }
+    .main-menu ul a {font-size: 0.9em; padding: 15px 0 7px 15px;}
+    .spot {
+        /* display: none; */
+        top: 60px;
+        font-size: 0.8em;
+        text-align: right;
+        transform: translate(0);
+    }
+    .spot_log li:first-child {display: none;}
+    /* 메인이미지 */
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .txt_wrap {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 550px;
+        height: 120px;
+    }
+    .txt_wrap .inner {
+        color: #fff;
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        padding: 0 .625rem 0 .625rem;
+        font-family: 'GangwonEdu_OTFLightA';
+        line-height: 2em;
+    }
+    .inner strong {
+        font-size: 2em;
+    }
+    .inner .addr_txt {
+        font-size: 1.2em;
+    }
+    .inner .place {
+        font-size: 1.1em;
+        background-color: rgba(245, 255, 106, 0.2);
+    }
+
+    #mvisual {
+        margin-bottom: 50px;
+    }
+    /* 공지사항 */
+    .notic{
+        max-width: 60%;
+    }
+    .notic h3, table, table a{
+        color: #fff;
+    }
+    table {
+        width: 100%;
+    }
+    td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    td.column_a {
+        width: 70%;
+    }
+    td.column_b {
+        width: 30%;
+    }
+
+    /* 지역설명--------------------------- */
+    .map {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        top: 16%;
+        display: block;
+    }
+    #mapInfo {display: flex; width: 50%;}
+    #mapInfo .mapSub h3 {font-size: 1.2em;}
+    #mapInfo .mapSub h2 {font-size: 2.4em;}
+    #mapsearch td {height: 35px; color: #111; font-size: 0.9em;}
+
+    .mapContent {
+       margin-left: 30px;
+       margin-top: 0;
+       left: 0;
+    }
+    .mapContent #infoItem {
+        width: 40%;
+        min-width: 330px;
+        height: 120px;
+    }
+    .title a{font-size: 1.5em;}
+    .titleInfo{font-size: 0.9em; margin: 15px 0 15px 0;}
+    .title .fa-arrow-up-right-from-square {font-size: 1.2em;}
+    #infoItem li {margin-bottom: 3px; font-size: 0.8em;}
+
+    /* 지도------------------------- */
+    .mapAll{transform: scale(80%);}
+}

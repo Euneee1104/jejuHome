@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* 메인이미지 영역 */
+
+.mainImg {
+    position: relative;
+    height: auto;
+    min-height: 1300px;
+    padding: 0 10% 5% 10%;
+}
+.mainImg .tourist {
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.mainImg .tourist h2 {
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 35px;
+    font-weight: 200;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.tourist p {
+    font-family: 'S-CoreDream-3Light';
+    text-align: center;
+    padding: 50px;
+}
+
+.tourist #mapsearch li {
+    display: table;
+    float: left;
+    width: 251px;
+    height: 42px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+.tourist #mapsearch li a{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #808282;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.clear {
+    clear: both;
+}
+.tourist #mapsearch .select_tour a {
+    background-color: orange;
+    color: #fff;
+}
+/* 인기관광지 지역별 */
+.selectTour_on {
+    position: relative;
+    font-family: 'S-CoreDream-3Light';
+}
+/* .selectTour_on .tour_tit{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+} */
+.tourItem_list {
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+.selectTour_on .tourItem_list li {
+    float: left;
+    margin: 0 40px 40px 40px;
+}
+.selectTour_on .tourItem_list li:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.selectTour_on .item_section {
+    width: 430px;
+    height: 330px;
+    background-color: #f6f6f6;
+}
+/* .item_section .item_top a {
+    display: block;
+} */
+.selectTour_on .item_section .item_top a img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+.item_top .day_tit {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.item_top .day_theme {
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+}
+.item_top .day_tag {
+    font-size: 0.8em;
+}

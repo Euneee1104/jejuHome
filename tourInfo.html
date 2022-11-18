@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tourInfo.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexTablet.css">
+    <link rel="stylesheet" href="css/tourTablet.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="icons/fontawesome-free-6.1.1-web/css/all.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/tour.js"></script>
+    <title>인기관광지</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+</head>
+<body>
+    <a href="#contents" class="hide">본문바로가기</a>
+    <!-- 해더영역 -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/jejuLogo.png" alt=""></a>
+        </div>
+        <nav role="navigation" class="navigator">
+            <h2 class="hide">메인메뉴</h2>
+            <ul class="main-menu">
+                <li><a href="#">제주여행</a>
+                    <ul class="travel">
+                        <li><a href="#">음식여행</a></li>
+                        <li><a href="#">힐링여행</a></li>
+                        <li><a href="#">문화여행</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">해수욕장</a>
+                    <ul class="beach">
+                        <li><a href="#">해수욕장 소개</a></li>
+                        <li><a href="#">해변드라이브 코스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">관광안내</a>
+                    <ul class="tour">
+                        <li><a href="#">축제관광</a></li>
+                        <li><a href="tourInfo.html">인기 관광지</a></li>
+                        <li><a href="#">제주 투어패스</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="hide">주요서비스</h2>
+        <nav class="spot">
+            <h3 class="jejusi-go"><a href="https://www.jejusi.go.kr/index.ac" target="_blank">제주시청 바로가기</a></h3>
+            <div>
+                <ul class="spot_log">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#"><b class="bold">로그인</b></a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 헤더 영역종료 -->
+    <div class="mainImg">
+        <div class="tourist clear">
+            <h2>인기관광지</h2>
+            <p>세계적으로 유명한 유네스코 자연유산과 세계지질공원 등 유명 관광지를 소개합니다</p>
+            <ul id="mapsearch">
+                <li class="select_tour" data-num="1"><a href="javascript:void(0)">제주/조천</a></li>
+                <li data-num="2"><a href="javascript:void(0)">성산/구좌</a></li>
+                <li data-num="3"><a href="javascript:void(0)">남원/표선</a></li>
+                <li data-num="4"><a href="javascript:void(0)">중문/서귀포</a></li>
+                <li data-num="5"><a href="javascript:void(0)">한경/대정/인덕</a></li>
+                <li data-num="6"><a href="javascript:void(0)">한림/애월</a></li>
+            </ul>
+        </div>
+        <div class="selectTour_on">
+            <div class="tour1" id="tour1">
+                <!-- <p class="tour_tit jeju_tour">제주/조천</p> -->
+                <ul class="tourItem_list">
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/9594a719-94ef-4b56-aab8-7a47535d0be2.jpg" alt="">
+                                    <p class="day_tit">산굼부리</p>
+                                    <p class="day_theme">한라산분화구인 백록담보다 더 깊고 더 넓은 신비의 화구</p>
+                                    <p class="day_tag">#오름 #걷기/등산 #친구 #자연경관 #억새</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/이호테우.jpg" alt="">
+                                    <p class="day_tit">이호테우해수욕장</p>
+                                    <p class="day_theme">일몰이 아름다운 공항에서 가까운 해변</p>
+                                    <p class="day_tag">#해변 #일몰 #자연 #물놀이 #포토존</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/돌하르방미술관.gif" alt="">
+                                    <p class="day_tit">북촌돌하르방미술관</p>
+                                    <p class="day_theme">곶자왈에 전시된 다양한 예술작품을 감상하는 야외미술관</p>
+                                    <p class="day_tag">#미술관 #야외 #자연 #미술관 #돌하르방</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/사려니숲길.jpg" alt="">
+                                    <p class="day_tit">사려니숲길</p>
+                                    <p class="day_theme"> 제주에서 청정한 공기를 마시며 몸과 마음을 치유받는 숲</p>
+                                    <p class="day_tag">#숲길 #걷기/등산 #자연경관 #숲</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="tour2 hide" id="tour2">
+                <!-- <p class="tour_tit sungsan_tour">성산/구좌</p> -->
+                <ul class="tourItem_list">
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/성산일출봉.jpg" alt="">
+                                    <p class="day_tit">성산일출봉</p>
+                                    <p class="day_theme">유네스코 세계자연유산</p>
+                                    <p class="day_tag">#유네스코 #부모님 #오름 #자연경관 #일출</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/김녕해수욕장.jpg" alt="">
+                                    <p class="day_tit">김녕해수욕장</p>
+                                    <p class="day_theme">코발트빛 바다와 풍자가 어울러지는 해수욕장</p>
+                                    <p class="day_tag">#해수욕장 #액티비티 #여름 #자연경관 #해변 #물놀이</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/만장굴.jpg" alt="">
+                                    <p class="day_tit">만장굴</p>
+                                    <p class="day_theme">세계 최장길이의 신비한 용암동굴</p>
+                                    <p class="day_tag">#용암동굴 #동굴  #자연 #포토존 #유네스코</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="tour3 hide">
+                <!-- <p class="tour_tit namwon_tour">남원/표선</p> -->
+                <ul class="tourItem_list">
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/큰엉해안경승지.png" alt="">
+                                    <p class="day_tit">큰엉해안경승지</p>
+                                    <p class="day_theme">제주도 숨은 비경 산책하기 좋은 남원큰멍해안</p>
+                                    <p class="day_tag">#제주올레코스 #큰엄전망대 #트래킹 #산책로</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="tour4 hide">
+                <!-- <p class="tour_tit jungmun_tour">중문/서귀포</p> -->
+                <ul class="tourItem_list">
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/쇠소깍.jpg" alt="">
+                                    <p class="day_tit">쇠소깍</p>
+                                    <p class="day_theme">카약을 타며 즐기는 검은모래 해변</p>
+                                    <p class="day_tag">#계곡 #휴식/힐링
+                                        #자연 #체험 #레저/체험 #물놀이</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="tour5 hide">
+                <!-- <p class="tour_tit hankyeong_tour">한경/대정/인덕</p> -->
+                <ul class="tourItem_list">
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/산방산.jpg" alt="">
+                                    <p class="day_tit">산방산</p>
+                                    <p class="day_theme">유네스코가 인정한 세계지질공원</p>
+                                    <p class="day_tag">#등산 #유네스코 #유채꽃 #포토존 #걷기 #자연</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="tour6 hide">
+                <!-- <p class="tour_tit hanlim_tour">한림/애월</p> -->
+                <ul class="tourItem_list">
+                    <li>
+                        <dl class="item_section">
+                            <dt class="item_top">
+                                <a href="#">
+                                    <img src="images/새별오름.jpg" alt="">
+                                    <p class="day_tit">새별오름</p>
+                                    <p class="day_theme">서부의 대표오름으로 근처에 나홀로나무가 있는 포토존</p>
+                                    <p class="day_tag">#등산 #오름 #포토존 #자연 #억새</p>
+                                </a>
+                            </dt>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터영역 -->
+    <footer>
+        <h2>제주옵서</h2>
+        <a href="https://www.jejusi.go.kr/index.ac" target="_blank"><img src="images/jeju_ci.png" alt=""></a>
+        <p>(63208) 제주특별자치도 제주시 광양9길 10, 대표전화：064-120 <br>
+            10, Gwangyang 9-gil, Jeju-si, Jeju-do, 63208, Republic of Korea <br>
+            Copyright 1999 JEJU-SI. All rights reserved.
+        </p>
+        <ul class="footmenu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

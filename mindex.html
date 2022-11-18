@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주옵서-적응용웹페이지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+        nav a:link, a:visited {
+            color: #fff;
+        }
+        nav a:active {
+            color: yellow;
+        }
+        h1 {
+            font-size: 1.8em;
+        }
+        h2 {
+            font-size: 1.3em;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 2.5;
+        }
+        .photo {
+            text-align: center;
+            width: 100%;
+            /* padding: 10px; */
+        }
+        .photo img {
+            width: 100%;
+        }
+        #container {
+            width: 100%;
+        }
+        header {
+            width: 100%;
+            height: 300px;
+            background: url(images/Citrus.jpg) no-repeat center;
+        }
+        nav {
+            height: 50px;
+            background-color: #000;
+        }
+        #main-nav {
+            list-style: none;
+            padding: 10px;
+        }
+        #main-nav li {
+            display: inline-block;
+            color: #fff;
+            font-size: 0.8em;
+            margin: 5px 15px;
+        }
+        footer {
+            background-color: #000;
+        }
+        footer p {
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="#tour">제주여행</a></li>
+                    <li><a href="#map">제주지도</a></li>
+                    <li><a href="#choice">인기관광지</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="tour">
+            <div class="page-title">
+                <h1>제주여행</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="images/tour_tree.jpg" alt="나홀로나무">
+                </div>
+                <div class="text">
+                    <strong>제주 새별오름 나혼자나무</strong><br>
+                        <p>주소 : 제주시 애월읍 본성리 산59-8</p><br>
+                        <p><b>여기는 </b><em>나혼자나무</em>  #제주 #여행 #사진스팟</p>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <div class="page-title">
+                <h2>제주지도</h2>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="images/제주지도.png" alt="제주 지도 한눈에 보기">
+                </div>
+                <div class="text">
+                    <p>세계적으로 유명한 유네스코 자연유산과 세계지질공원 등 유명 관광지를 소개합니다</p>
+                </div>
+            </div>
+        </section>
+        <section id="choice">
+            <div class="page-title">
+                <h1>인기 관광지</h1>
+            </div>
+            <div class="content">
+                <h2>제주조천</h2>
+                <div class="photo">
+                    <img src="images/9594a719-94ef-4b56-aab8-7a47535d0be2.jpg" alt="" class="san">
+                </div>
+                <ol>
+                    <li>산굼부리</li>
+                    <li>한라산분화구인 백록담보다 더 깊고 더 넓은 신비의 화구</li>
+                    <li>#오름 #걷기/등산 #친구 #자연경관 #억새</li>
+                </ol>
+            </div>
+        </section>
+        <footer>
+            <p>제주옵서</p>
+        </footer>
+    </div>
+</body>
+</html>
